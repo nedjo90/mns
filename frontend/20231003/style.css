@@ -1,0 +1,11 @@
+table{
+	background-color: red;
+	width: 100%;
+}
+td{
+	background-color: white;
+	border: 5px solid transparent;
+	width: auto;
+	height: auto;
+	text-align: center;
+}

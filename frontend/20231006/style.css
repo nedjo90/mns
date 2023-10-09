@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+
+}
+
+
+.card {
+	border: 1px solid black;
+	padding: 1em;
+}
+
+.section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section-block {
+	padding: 0.5em;
+	
+}
+
+.w-25 {
+	flex: 1 1 25%;
+}
+
+.w-50 {
+	flex: 1 1 50%;
+}
