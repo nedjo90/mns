@@ -1,5 +1,5 @@
 let grille = { "A": [], "B": [], "C": [] };
-let nombreDePieces = 7;
+let nombreDePieces = 13;
 let compteur = 0;
 
 function afficherGrille(grille, detail = "") {

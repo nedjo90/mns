@@ -19,16 +19,16 @@ Le nombre de coups nécessaires dépend du nombre de pièces (2^n - 1 coups pour
 
 \* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 function hanoi(n, D, I, F) {
-	//arrêt quand on deplace le dernier à deplacer (la plus petite pièce)
-	if (n === 1) {
-		deplacer(D, F);
-		return;
-	}
-	//deplace de la tour de depart vers la fin
-	hanoi(n - 1, D, F, I);
-	deplacer(D, F);
-	//deplacement de l'intermédiaire vers la fin
-	hanoi(n - 1, I, D, F);
+  //arrêt quand on deplace le dernier à deplacer (la plus petite pièce)
+  if (n === 1) {
+    deplacer(D, F);
+    return;
+  }
+  //deplace de la tour de depart vers la fin
+  hanoi(n - 1, D, F, I);
+  deplacer(D, F);
+  //deplacement de l'intermédiaire vers la fin
+  hanoi(n - 1, I, D, F);
 }
 
-hanoi(nombreDePieces, "B", "A", "C")
+hanoi(nombreDePieces, "B", "A", "C");
